@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ONGS</title>
+
+</head>
+<body>
+    <div>
+        <div>
+            <p><b/>Orgs Polinizadoras</p>
+        </div>
+        <div>
+            <button id="adicionar" onclick="novaOng()">Novo Cadastro</button>
+        </div>
+
+        <div>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Slogan</th>
+                        <th>Link Site</th>
+                        <th>Ativo</th>
+                        <th>Configuração</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <div id="formulario">
+        <h2 id="tituloForm"></h2>
+        <form>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="ong_nome" placeholder="Nome da Ong">
+            </div>
+            <div>
+                <label for="slogan">Slogan</label>
+                <input type="text" name="slogan" id="ong_slogan" placeholder="Slogan da Ong">
+            </div>
+            <div>
+                <label for="site">Site</label>
+                <input type="text" name="site" id="ong_site" placeholder="Site da Ong">
+            </div>
+            <div>
+                <label for="ativa">Ativa</label>
+                <input type='checkbox' name="ativa" checked="true" id="ong_ativa">
+            </div>
+            <div>
+                <button type="button" id="salvarButton" onclick="salvar();">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="crud-ongs.js"></script>
+</body>
+</html>
